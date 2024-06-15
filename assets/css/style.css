@@ -1,0 +1,200 @@
+/* BASIC STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  padding: 0 4vw;
+}
+
+/* ! HEADER */
+nav {
+  width: 80%;
+  text-align: left;
+  padding: 3vh;
+}
+
+nav a {
+  margin: auto 2vw 2vw 2vw;
+}
+nav a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: rgb(46, 194, 149);
+}
+
+header div {
+  /* Hier könnnen wir auch text alingn center benutzen um inline / inline-block elmente zu zentrieren */
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+/* ! MAIN */
+
+/* workSection */
+
+.workSection {
+  text-align: left;
+  margin-left: 3vw;
+  margin-top: 2vh;
+  width: 40vw;
+  height: 40vh;
+  font-family: Roboto;
+  font-size: 30px;
+}
+
+.workSection span {
+  color: #659d89;
+  display: block;
+}
+
+/* workSectionIcon */
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  justify-content: end;
+  align-items: end;
+}
+ul li{
+  width: max-content;
+}
+ul li:nth-of-type(1)::before {
+  content: url(../img/icon/TW.png);
+}
+ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+ul li:nth-of-type(2)::before {
+  content: url(../img/icon/FB.png);
+}
+
+
+ul li:nth-of-type(3)::before {
+  content: url(../img/icon/IS.png);
+}
+
+
+/* footerFirstPage */
+.footerFirstPage {
+  margin-left: 2vw;
+}
+
+.page-break::after {
+  content: "";
+  display: block;
+  height: 100vh; /* 高度设为视口高度，强制换到下一页 */
+  /* erzwingen den Wechsel zur nächsten Seite */
+}
+
+/* heard2tePage */
+.footerFirstPage {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+}
+.heard2tePage span {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  text-align: left;
+  display: block;
+}
+
+/* container */
+.container {
+  display: flex; /* Setzt das Container-Layout auf das Flexbox-Modell */
+  flex-wrap: wrap; /* Erlaubt es den Flex-Elementen, auf mehrere Zeilen umzubrechen */
+  /* Richtet die Flex-Elemente am oberen Rand des Containers aus */
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20vh;
+}
+
+article {
+  display: inline-block;
+  min-width: 400px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  vertical-align: top; /* 使所有article顶部对齐 */
+  /* Richtet die Spitzen aller Artikel aus */
+}
+
+.container article:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*  containerThirdBag */
+
+.leftArticle {
+  text-align: left;
+  display: block;
+}
+
+.rightArticle {
+  text-align: right;
+  display: block;
+}
+
+.containerThirdBag .leftArticle p {
+  max-width: 100vb;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.containerThirdBag .rightArticle p {
+  text-align: center; /* 将文本对齐方式改为靠右 */
+  max-width: 100vw; /* 确保元素的最大宽度为视口宽度 */
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  margin-top: 50px;
+  margin-left: 35vw; /* 自动左边距，使元素靠右 */
+  margin-right: auto; /* 确保右边距为0 */
+  display: block; /* 确保元素为块级元素 */
+}
+.containerThirdBag p span {
+  display: block;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  text-align: center;
+}
+.containerThirdBag img:hover{
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+/* ! Footer */
+
+footer {
+  text-align: center;
+  margin-bottom: 150px;
+}
